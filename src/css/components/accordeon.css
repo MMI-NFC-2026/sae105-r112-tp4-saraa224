@@ -6,3 +6,8 @@
   gap: 30px;
   align-items: flex-start;
 }
+.accordeon summary img {
+  display: block;
+  width: 110px;
+  height: auto;
+}
