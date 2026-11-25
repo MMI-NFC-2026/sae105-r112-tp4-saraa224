@@ -3,26 +3,25 @@
 */
 .accordeon {
   display: flex;
-  gap: 30px;
-  align-items: flex-start;
-}
-.accordeon summary img {
-  display: block;
-  width: 110px;
-  height: auto;
-}
-details {
-  /* fermé et ouvert */
+  flex-direction: column;
+  gap: 6px;
+  width: 230px;
 }
 
-details[open] {
-  /* ouvert : le texte passe à droite de l'image */
-  display: flex;
-  gap: 20px;
+.accordeon summary img {
+  display: block;
+  width: 130px;
+  height: auto;
+}
+
+details {
+  background: #eee;
+  border-radius: 6px;
+  padding: 6px;
 }
 
 details[open] > div {
-  width: 160px;
+  padding: 8px 6px 4px;
 }
 
 details > div h3 {
