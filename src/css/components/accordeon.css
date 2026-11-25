@@ -11,3 +11,20 @@
   width: 110px;
   height: auto;
 }
+details {
+  /* fermé et ouvert */
+}
+
+details[open] {
+  /* ouvert : le texte passe à droite de l'image */
+  display: flex;
+  gap: 20px;
+}
+
+details[open] > div {
+  width: 160px;
+}
+
+details > div h3 {
+  margin-top: 0;
+}
