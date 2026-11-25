@@ -49,3 +49,7 @@ details > div h3 {
   border-left: 25px solid #bbb;
   transition: transform 0.4s, border-left-color 0.4s;
 }
+.accordeon > details[open] > summary::after {
+  transform: rotate(90deg);
+  border-left-color: #ffb3b8;
+}
