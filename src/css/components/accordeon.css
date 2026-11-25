@@ -27,3 +27,10 @@ details[open] > div {
 details > div h3 {
   margin-top: 0;
 }
+.accordeon > details > summary {
+  list-style: none;
+}
+.accordeon > details > summary::marker,
+.accordeon > details > summary::-webkit-details-marker {
+  display: none;
+}
