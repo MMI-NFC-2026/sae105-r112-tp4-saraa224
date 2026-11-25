@@ -34,3 +34,18 @@ details > div h3 {
 .accordeon > details > summary::-webkit-details-marker {
   display: none;
 }
+.accordeon > details > summary {
+  position: relative;
+  cursor: pointer;
+}
+
+.accordeon > details > summary::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 25px solid #bbb;
+  transition: transform 0.4s, border-left-color 0.4s;
+}
